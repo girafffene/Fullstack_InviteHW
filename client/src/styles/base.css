@@ -1,0 +1,104 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  display: flex;
+  justify-content: center;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.userCard {
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  height: 500px;
+  background-color: rgb(238, 238, 238);
+  margin-top: 100px;
+  border: 1px solid rgb(221, 221, 221);
+}
+
+.userCard img {
+  width: 150px;
+  height: 150px;
+  border-radius: 100%;
+  position: relative;
+  left: 130px;
+  margin: 50px;
+  box-shadow: 1px 1px 15px black;
+}
+
+.pictureHolder {
+  border-bottom: 1px solid rgb(221, 221, 221);
+}
+
+.buttonHolder {
+  padding-top: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: 1px solid rgb(221, 221, 221);
+}
+
+button {
+  height: 50px;
+  margin: 0px 50px;
+  width: 100px;
+  font-size: large;
+  font-weight: bolder;
+  padding-top: 5px;
+  border: none;
+  cursor: pointer;
+}
+
+.goingButton {
+  color: white;
+  background-color: green;
+}
+
+.notGoingButton {
+  color: white;
+  background-color: red;
+}
+
+p {
+  margin-left: 15px;
+}
+
+button:focus {
+  outline: none;
+}
+
+.attendeeCount {
+  display: flex;
+  justify-content: space-around;
+  position: relative;
+  top: 100px;
+}
+
+.attendeeCount a {
+  margin-bottom: 5px;
+}
+
+.going,
+.notGoingLink {
+  cursor: pointer;
+  font-weight: normal;
+  width: 150px;
+}
