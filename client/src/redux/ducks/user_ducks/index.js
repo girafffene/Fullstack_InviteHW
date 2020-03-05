@@ -101,6 +101,7 @@ export function userNotGoing(user) {
   }
 }
 
+//function for custom hook
 export function useUser() {
   const dispatch = useDispatch()
 

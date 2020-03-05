@@ -28,7 +28,6 @@ router.post("/going", (req, res, next) => {
   data.going.push(req.body.user)
 
   res.json(data.going)
-  console.log("going", data.going)
 })
 
 //getting information from the "going" array
@@ -41,7 +40,6 @@ router.post("/notgoing", (req, res, next) => {
   data.notGoing.push(req.body.user)
 
   res.json(data.notGoing)
-  console.log("notgoing", data.notGoing)
 })
 
 //getting information from the "not going" array

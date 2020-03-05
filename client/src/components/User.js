@@ -1,7 +1,12 @@
 import React from "react"
+
+//importing custom hook
 import { useUser } from "../hooks"
+
+//importing icons
 import { FaCheck } from "react-icons/fa"
 import { FaTimes } from "react-icons/fa"
+
 import { Link } from "react-router-dom"
 
 export default props => {
